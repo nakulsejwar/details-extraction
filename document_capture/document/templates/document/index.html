@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Capture System</title>
+  <link rel="stylesheet" href="{% static 'document/style.css' %}">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Aadhar Number Extraction</h1>
+    
+    <!-- Upload Form -->
+    <form id="uploadForm">
+      <label for="documentPdf">Upload Aadhar PDF:</label>
+      <input type="file" id="documentPdf" accept="application/pdf" required>
+      <button type="submit">Upload Document</button>
+    </form>
+  
+    <!-- Display Extracted Aadhar Number -->
+    <div id="extractedData" class="hidden">
+      <h2>Extracted Aadhar Number</h2>
+      <p><strong>Aadhar Number:</strong> <span id="aadharNumber"></span></p>
+    </div>
+  </div>
+
+  <script src="{% static 'document/script.js' %}"></script>
+</body>
+</html>
