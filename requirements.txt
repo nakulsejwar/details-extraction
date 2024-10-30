@@ -1,0 +1,4 @@
+﻿djangorestframework
+pillow
+PyMuPDF
+pytesseract
