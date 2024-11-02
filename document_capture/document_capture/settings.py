@@ -127,13 +127,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8000',
-    'http://127.0.0.1:8000',
-    # Add other origins as needed
-]
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "document/static"),
