@@ -58,9 +58,9 @@ ROOT_URLCONF = 'document_capture.urls'
 
 TEMPLATES = [
     {
-        'DIRS': [os.path.join(BASE_DIR, 'document/templates')],
+        #'DIRS': [os.path.join(BASE_DIR, 'document/templates')],
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        #'DIRS': [],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
