@@ -79,22 +79,22 @@ WSGI_APPLICATION = 'document_capture.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 #DATABASES = {
 #    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': os.environ.get('nakul'),
-#        'USER': os.environ.get('nakul_user'),
-#        'PASSWORD': os.environ.get('ULYCXkOIZkJuyU90z5OJjWUHyw0LstsC'),
-#        'HOST': os.environ.get('dpg-csh6fo88fa8c73f6u0q0-a'),
-#        'PORT': '5432',
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 #}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('postgres'),
+        'USER': os.environ.get('postgres.qfgpopivqalnqrevjldh'),
+        'PASSWORD': os.environ.get('Nakul02@'),
+        'HOST': os.environ.get('aws-0-us-east-1.pooler.supabase.com'),
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation
